@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arrebol theme preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root { --page: #f3ede6; --ink: #241a2e; --soft: #6b5d7d; }
+  @media (prefers-color-scheme: dark) { :root { --page: #0f0b16; --ink: #efe8f7; --soft: #a79cbf; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--ink); font-family: "Instrument Serif", Georgia, serif; }
+  header { max-width: 1180px; margin: 0 auto; padding: 56px 24px 16px; }
+  h1 { font-size: clamp(48px, 9vw, 112px); font-weight: 400; margin: 0; line-height: .95; letter-spacing: -0.02em;
+       background: linear-gradient(100deg, #ff4fa3 0%, #ffa25c 55%, #ffd36b 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  header p { font-size: 22px; color: var(--soft); max-width: 60ch; margin: 12px 0 0; }
+  h2 { font-weight: 400; font-style: italic; font-size: 30px; margin: 40px 0 16px; }
+  main { max-width: 1180px; margin: 0 auto; padding: 0 24px 72px; }
+  .win { margin: 0 0 32px; border: 1px solid; border-radius: 10px; overflow: hidden; font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 13px; box-shadow: 0 24px 60px -30px rgba(0,0,0,.5); }
+  .title { text-align: center; padding: 7px; font-size: 12px; border-bottom: 1px solid; }
+  .body { display: flex; min-height: 420px; }
+  .activity { width: 44px; border-right: 1px solid; display: flex; flex-direction: column; align-items: center; gap: 14px; padding-top: 14px; }
+  .activity i { width: 18px; height: 18px; border-radius: 4px; opacity: .85; }
+  .side { width: 180px; border-right: 1px solid; padding: 10px 0; flex-shrink: 0; }
+  .side-h { padding: 0 14px 8px; font-size: 11px; }
+  .file { padding: 3px 14px; }
+  .main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+  .tabs { display: flex; border-bottom: 1px solid; }
+  .tab { padding: 8px 16px; }
+  .code { margin: 0; padding: 10px 0; overflow-x: auto; line-height: 1.6; flex: 1; font: inherit; }
+  .ln { display: flex; padding-right: 16px; white-space: pre; }
+  .num { width: 48px; text-align: right; padding-right: 18px; flex-shrink: 0; }
+  .term { border-top: 1px solid; padding: 10px 16px; line-height: 1.7; }
+  .status { display: flex; gap: 16px; font-size: 12px; border-top: 1px solid; padding: 3px 0; }
+  @media (max-width: 760px) { .side { display: none; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Arrebol</h1>
+  <p>The glow clouds catch at sunset, made into color themes for VS Code.</p>
+</header>
+<main>
+<h2>Arrebol Neon Coast Night</h2>
+<figure class="win" style="background:#161021;color:#efe8f7;border-color:#2c2240">
+  <div class="title" style="background:#0d0914;color:#a79cbf;border-color:#2c2240">Arrebol Neon Coast Night</div>
+  <div class="body">
+    <aside class="activity" style="background:#0d0914;border-color:#2c2240">
+      <i style="background:#ff4fa3"></i><i style="background:#5f5578"></i><i style="background:#5f5578"></i>
+    </aside>
+    <aside class="side" style="background:#120d1b;color:#a79cbf;border-color:#2c2240">
+      <div class="side-h" style="color:#efe8f7">Explorer</div>
+      <div class="file" style="">coast.ts</div><div class="file" style="background:#ff4fa32e;color:#efe8f7">nightDrive.ts</div><div class="file" style="">crew.ts</div><div class="file" style="">README.md</div>
+      <div class="file" style="color:#52e3a4">heist.test.ts</div>
+      <div class="file" style="color:#62c8ff">routes.json</div>
+    </aside>
+    <div class="main">
+      <div class="tabs" style="background:#120d1b;border-color:#2c2240">
+        <span class="tab" style="background:#161021;color:#efe8f7;box-shadow:inset 0 2px 0 #ff4fa3">nightDrive.ts</span>
+        <span class="tab" style="color:#5f5578">crew.ts</span>
+      </div>
+      <pre class="code"><div class="ln" style=""><span class="num" style="color:#5f5578">1</span><span><span style="color:#7a6e99;font-style:italic">// Plan the late-night run along the coast</span></span></div><div class="ln" style=""><span class="num" style="color:#5f5578">2</span><span><span style="color:#ff4fa3">import</span> { <span style="color:#6ccbff">Route</span>, <span style="color:#6ccbff">Crew</span> } <span style="color:#ff4fa3">from</span> <span style="color:#4fe3c1">"./coast"</span>;</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">3</span><span> </span></div><div class="ln" style=""><span class="num" style="color:#5f5578">4</span><span><span style="color:#ff4fa3">const</span> <span style="color:#ff8a7a">SUNSET_HOUR</span> <span style="color:#f07dc0">=</span> <span style="color:#ffd36b">19</span>;</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">5</span><span><span style="color:#ff4fa3">const</span> <span style="color:#efe8f7">pattern</span> <span style="color:#f07dc0">=</span> <span style="color:#8ee26b">/^ocean-(\d+)$/i</span>;</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">6</span><span> </span></div><div class="ln" style=""><span class="num" style="color:#5f5578">7</span><span><span style="color:#ffd36b;font-style:italic">@tracked</span></span></div><div class="ln" style=""><span class="num" style="color:#5f5578">8</span><span><span style="color:#ff4fa3">export class</span> <span style="color:#6ccbff">NightDrive</span>&lt;<span style="color:#6ccbff">T</span> <span style="color:#ff4fa3">extends</span> <span style="color:#6ccbff">Route</span>&gt; {</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">9</span><span>  <span style="color:#ff4fa3">private</span> <span style="color:#c6a6ff">speed</span>: <span style="color:#6ccbff">number</span> <span style="color:#f07dc0">=</span> <span style="color:#ffd36b">88</span>;</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">10</span><span> </span></div><div class="ln" style=""><span class="num" style="color:#5f5578">11</span><span>  <span style="color:#ff4fa3">constructor</span>(<span style="color:#ff4fa3">readonly</span> <span style="color:#f3b8d9;font-style:italic">crew</span>: <span style="color:#6ccbff">Crew</span>, <span style="color:#ff4fa3">private</span> <span style="color:#f3b8d9;font-style:italic">route</span>: <span style="color:#6ccbff">T</span>) {}</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">12</span><span> </span></div><div class="ln" style=""><span class="num" style="color:#5f5578">13</span><span>  <span style="color:#ff4fa3">async</span> <span style="color:#ffa25c">cruise</span>(<span style="color:#f3b8d9;font-style:italic">stops</span>: <span style="color:#6ccbff">T</span>[]): <span style="color:#6ccbff">Promise</span>&lt;<span style="color:#6ccbff">string</span>&gt; {</span></div><div class="ln" style="background:#201831"><span class="num" style="color:#ffa25c">14</span><span>    <span style="color:#ff4fa3">for</span> (<span style="color:#ff4fa3">const</span> <span style="color:#efe8f7">stop</span> <span style="color:#ff4fa3">of</span> <span style="color:#f3b8d9;font-style:italic">stops</span>) {</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">15</span><span>      <span style="color:#ff4fa3">if</span> (<span style="color:#efe8f7">stop</span>.<span style="color:#c6a6ff">hour</span> <span style="color:#f07dc0">&gt;=</span> <span style="color:#ff8a7a">SUNSET_HOUR</span> <span style="color:#f07dc0">&amp;&amp;</span> <span style="color:#efe8f7">pattern</span>.<span style="color:#ffa25c">test</span>(<span style="color:#efe8f7">stop</span>.<span style="color:#c6a6ff">id</span>)) {</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">16</span><span>        <span style="color:#efe8f7">console</span>.<span style="color:#ffa25c">log</span>(<span style="color:#4fe3c1">`Rolling past </span><span style="color:#ff4fa3">${</span><span style="color:#efe8f7">stop</span>.<span style="color:#c6a6ff">name</span><span style="color:#ff4fa3">}</span><span style="color:#ffd36b">\n</span><span style="color:#4fe3c1">`</span>);</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">17</span><span>      }</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">18</span><span>    }</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">19</span><span>    <span style="color:#ff4fa3">return</span> <span style="color:#ff4fa3">this</span>.<span style="color:#c6a6ff">crew</span>.<span style="color:#ffa25c">names</span>().<span style="color:#ffa25c">join</span>(<span style="color:#4fe3c1">", "</span>);</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">20</span><span>  }</span></div><div class="ln" style=""><span class="num" style="color:#5f5578">21</span><span>}</span></div></pre>
+      <div class="term" style="background:#120d1b;border-color:#2c2240">
+        <div><span style="color:#52e3a4">➜</span> <span style="color:#4fe3c1">arrebol</span> <span style="color:#62c8ff">git:(</span><span style="color:#ff5d73">main</span><span style="color:#62c8ff">)</span> npm run build</div>
+        <div><span style="color:#52e3a4">✔</span> Arrebol Neon Coast Night <span style="color:#6f6590">(contrast ok)</span></div>
+        <div><span style="color:#ffd36b">!</span> 1 warning <span style="color:#ff4fa3">→ themes/</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="status" style="background:#0d0914;color:#a79cbf;border-color:#2c2240">
+    <span style="background:#ff4fa3;color:#1a0f1f;padding:0 8px">main</span><span>TypeScript</span><span style="color:#ff5d73">⨯ 0</span><span style="color:#ffb454">⚠ 1</span>
+  </div>
+</figure>
+<h2>Arrebol Neon Coast Day</h2>
+<figure class="win" style="background:#fff8f1;color:#2b1f38;border-color:#e6d4c3">
+  <div class="title" style="background:#f1e4d7;color:#6b5d7d;border-color:#e6d4c3">Arrebol Neon Coast Day</div>
+  <div class="body">
+    <aside class="activity" style="background:#f1e4d7;border-color:#e6d4c3">
+      <i style="background:#d61f74"></i><i style="background:#a99aa8"></i><i style="background:#a99aa8"></i>
+    </aside>
+    <aside class="side" style="background:#f8eee4;color:#6b5d7d;border-color:#e6d4c3">
+      <div class="side-h" style="color:#2b1f38">Explorer</div>
+      <div class="file" style="">coast.ts</div><div class="file" style="background:#d61f742e;color:#2b1f38">nightDrive.ts</div><div class="file" style="">crew.ts</div><div class="file" style="">README.md</div>
+      <div class="file" style="color:#157a50">heist.test.ts</div>
+      <div class="file" style="color:#0a6fae">routes.json</div>
+    </aside>
+    <div class="main">
+      <div class="tabs" style="background:#f8eee4;border-color:#e6d4c3">
+        <span class="tab" style="background:#fff8f1;color:#2b1f38;box-shadow:inset 0 2px 0 #d61f74">nightDrive.ts</span>
+        <span class="tab" style="color:#a99aa8">crew.ts</span>
+      </div>
+      <pre class="code"><div class="ln" style=""><span class="num" style="color:#a99aa8">1</span><span><span style="color:#857789;font-style:italic">// Plan the late-night run along the coast</span></span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">2</span><span><span style="color:#c2186b">import</span> { <span style="color:#0b67a3">Route</span>, <span style="color:#0b67a3">Crew</span> } <span style="color:#c2186b">from</span> <span style="color:#00796b">"./coast"</span>;</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">3</span><span> </span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">4</span><span><span style="color:#c2186b">const</span> <span style="color:#c0392b">SUNSET_HOUR</span> <span style="color:#a8336f">=</span> <span style="color:#8a5a00">19</span>;</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">5</span><span><span style="color:#c2186b">const</span> <span style="color:#2b1f38">pattern</span> <span style="color:#a8336f">=</span> <span style="color:#2f7d1f">/^ocean-(\d+)$/i</span>;</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">6</span><span> </span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">7</span><span><span style="color:#8a5a00;font-style:italic">@tracked</span></span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">8</span><span><span style="color:#c2186b">export class</span> <span style="color:#0b67a3">NightDrive</span>&lt;<span style="color:#0b67a3">T</span> <span style="color:#c2186b">extends</span> <span style="color:#0b67a3">Route</span>&gt; {</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">9</span><span>  <span style="color:#c2186b">private</span> <span style="color:#6a3db8">speed</span>: <span style="color:#0b67a3">number</span> <span style="color:#a8336f">=</span> <span style="color:#8a5a00">88</span>;</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">10</span><span> </span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">11</span><span>  <span style="color:#c2186b">constructor</span>(<span style="color:#c2186b">readonly</span> <span style="color:#9c3d73;font-style:italic">crew</span>: <span style="color:#0b67a3">Crew</span>, <span style="color:#c2186b">private</span> <span style="color:#9c3d73;font-style:italic">route</span>: <span style="color:#0b67a3">T</span>) {}</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">12</span><span> </span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">13</span><span>  <span style="color:#c2186b">async</span> <span style="color:#b44700">cruise</span>(<span style="color:#9c3d73;font-style:italic">stops</span>: <span style="color:#0b67a3">T</span>[]): <span style="color:#0b67a3">Promise</span>&lt;<span style="color:#0b67a3">string</span>&gt; {</span></div><div class="ln" style="background:#fbeee2"><span class="num" style="color:#c4510a">14</span><span>    <span style="color:#c2186b">for</span> (<span style="color:#c2186b">const</span> <span style="color:#2b1f38">stop</span> <span style="color:#c2186b">of</span> <span style="color:#9c3d73;font-style:italic">stops</span>) {</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">15</span><span>      <span style="color:#c2186b">if</span> (<span style="color:#2b1f38">stop</span>.<span style="color:#6a3db8">hour</span> <span style="color:#a8336f">&gt;=</span> <span style="color:#c0392b">SUNSET_HOUR</span> <span style="color:#a8336f">&amp;&amp;</span> <span style="color:#2b1f38">pattern</span>.<span style="color:#b44700">test</span>(<span style="color:#2b1f38">stop</span>.<span style="color:#6a3db8">id</span>)) {</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">16</span><span>        <span style="color:#2b1f38">console</span>.<span style="color:#b44700">log</span>(<span style="color:#00796b">`Rolling past </span><span style="color:#c2186b">${</span><span style="color:#2b1f38">stop</span>.<span style="color:#6a3db8">name</span><span style="color:#c2186b">}</span><span style="color:#8a5a00">\n</span><span style="color:#00796b">`</span>);</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">17</span><span>      }</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">18</span><span>    }</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">19</span><span>    <span style="color:#c2186b">return</span> <span style="color:#c2186b">this</span>.<span style="color:#6a3db8">crew</span>.<span style="color:#b44700">names</span>().<span style="color:#b44700">join</span>(<span style="color:#00796b">", "</span>);</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">20</span><span>  }</span></div><div class="ln" style=""><span class="num" style="color:#a99aa8">21</span><span>}</span></div></pre>
+      <div class="term" style="background:#f8eee4;border-color:#e6d4c3">
+        <div><span style="color:#157a50">➜</span> <span style="color:#00796b">arrebol</span> <span style="color:#0a6fae">git:(</span><span style="color:#c8243f">main</span><span style="color:#0a6fae">)</span> npm run build</div>
+        <div><span style="color:#157a50">✔</span> Arrebol Neon Coast Day <span style="color:#6b5d7d">(contrast ok)</span></div>
+        <div><span style="color:#8a5a00">!</span> 1 warning <span style="color:#c2186b">→ themes/</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="status" style="background:#f1e4d7;color:#6b5d7d;border-color:#e6d4c3">
+    <span style="background:#d61f74;color:#ffffff;padding:0 8px">main</span><span>TypeScript</span><span style="color:#c8243f">⨯ 0</span><span style="color:#a85d00">⚠ 1</span>
+  </div>
+</figure>
+</main>
+</body>
+</html>

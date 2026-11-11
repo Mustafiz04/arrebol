@@ -1,0 +1,60 @@
+{
+  "name": "arrebol",
+  "displayName": "Arrebol Themes",
+  "description": "A growing collection of carefully contrasted VS Code color themes, each with dark and light variants.",
+  "version": "0.1.0",
+  "publisher": "your-publisher-id",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color theme",
+    "dark theme",
+    "light theme",
+    "neon",
+    "synthwave",
+    "sunset",
+    "tropical",
+    "accessible",
+    "high contrast"
+  ],
+  "galleryBanner": {
+    "color": "#161021",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-github-user/arrebol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-github-user/arrebol/issues"
+  },
+  "scripts": {
+    "build": "node src/build.js",
+    "check": "node src/build.js --check",
+    "package": "npm run build && vsce package",
+    "publish": "npm run build && vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.2.1"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Arrebol Neon Coast Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/arrebol-neon-coast-night.json"
+      },
+      {
+        "label": "Arrebol Neon Coast Day",
+        "uiTheme": "vs",
+        "path": "./themes/arrebol-neon-coast-day.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+.vscode/**
+src/**
+preview/index.html
+node_modules/**
+.gitignore
+CONTRIBUTING.md
+*.vsix
