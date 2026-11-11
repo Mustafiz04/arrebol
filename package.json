@@ -3,7 +3,7 @@
   "displayName": "Arrebol Themes",
   "description": "A growing collection of carefully contrasted VS Code color themes, each with dark and light variants.",
   "version": "0.1.0",
-  "publisher": "your-publisher-id",
+  "publisher": "MustafizKaifee",
   "license": "MIT",
   "engines": {
     "vscode": "^1.80.0"
@@ -29,10 +29,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-github-user/arrebol.git"
+    "url": "https://github.com/mustafiz04/arrebol.git"
   },
   "bugs": {
-    "url": "https://github.com/your-github-user/arrebol/issues"
+    "url": "https://github.com/mustafiz04/arrebol/issues"
   },
   "scripts": {
     "build": "node src/build.js",

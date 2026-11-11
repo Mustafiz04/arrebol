@@ -71,12 +71,6 @@ themes/                     generated theme JSON (committed, shipped in the exte
 preview/                    generated preview page
 ```
 
-## Publishing
-
-1. Create a publisher at https://marketplace.visualstudio.com/manage and replace `your-publisher-id` in `package.json`.
-2. Replace `your-github-user` in the repository URLs.
-3. Add a 128x128 `icon.png` and an `"icon": "icon.png"` entry in `package.json` (recommended).
-4. `npx vsce login <publisher>`, then `npm run publish`.
 
 ## License
 
