@@ -1,8 +1,8 @@
 {
   "name": "arrebol",
   "displayName": "Arrebol Themes",
-  "description": "A growing collection of carefully contrasted VS Code color themes, each with dark and light variants.",
-  "version": "0.1.0",
+  "description": "VS Code color themes inspired by GTA VI / Vice City aesthetics - neon signs, Miami sunsets, and tropical vibes. Dark and light variants with WCAG-compliant contrast.",
+  "version": "0.1.1",
   "publisher": "MustafizKaifee",
   "license": "MIT",
   "engines": {
@@ -21,7 +21,19 @@
     "sunset",
     "tropical",
     "accessible",
-    "high contrast"
+    "high contrast",
+    "gta",
+    "gta vi",
+    "gta 6",
+    "vice city",
+    "miami",
+    "florida",
+    "80s",
+    "retro",
+    "vaporwave",
+    "outrun",
+    "cyberpunk",
+    "palm trees"
   ],
   "galleryBanner": {
     "color": "#161021",

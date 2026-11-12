@@ -2,7 +2,7 @@
 
 *Arrebol* (Spanish): the rosy, fiery glow that clouds catch from the sun at dawn and dusk.
 
-Arrebol is a growing collection of VS Code color themes. Every theme comes in a dark and a light variant, and every palette is checked against WCAG contrast rules at build time, so the colors look good and stay readable through long sessions.
+Arrebol is a growing collection of VS Code color themes inspired by vibrant aesthetics like **GTA VI**, Vice City, and Miami sunsets. Every theme comes in a dark and a light variant, and every palette is checked against WCAG contrast rules at build time, so the colors look good and stay readable through long sessions.
 
 ![Preview](preview/screenshot.png)
 
@@ -10,7 +10,7 @@ Arrebol is a growing collection of VS Code color themes. Every theme comes in a 
 
 | Collection | Variants | Mood |
 | --- | --- | --- |
-| Neon Coast | Night (dark), Day (light) | Neon signs, sunset skies, teal water and palm trees on a tropical crime-caper coastline |
+| Neon Coast | Night (dark), Day (light) | Inspired by GTA VI / Vice City vibes - neon signs, Miami sunsets, teal waters and palm trees on a tropical crime-caper coastline |
 
 ## Install
 
